@@ -1,4 +1,20 @@
 import { CheckCircle2 } from "lucide-react";
+import Image from "next/image";
+
+const carePhotos = [
+  {
+    src: "/image/images_10.jpg",
+    alt: "A caregiver helping an older adult get comfortable at home",
+  },
+  {
+    src: "/image/images_13.jpg",
+    alt: "A caregiver and older adult sharing an activity together",
+  },
+  {
+    src: "/image/images_14.jpg",
+    alt: "A caregiver supporting an older adult using a walker",
+  },
+];
 
 const pillars = [
   {
@@ -34,7 +50,21 @@ export default function WhyChooseUs() {
           </h2>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
+        <div className="mt-10 grid gap-4 sm:grid-cols-3">
+          {carePhotos.map((photo) => (
+            <div key={photo.src} className="group relative aspect-[4/3] overflow-hidden rounded-lg ring-1 ring-black/5">
+              <Image
+                src={photo.src}
+                alt={photo.alt}
+                fill
+                sizes="(max-width: 640px) 100vw, 33vw"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
           {pillars.map((pillar) => (
             <div key={pillar.title} className="rounded-2xl border border-border bg-white p-5 shadow-sm">
               <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-primary/10 text-primary">

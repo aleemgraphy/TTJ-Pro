@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, PhoneCall } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -39,32 +40,15 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative flex items-center justify-center">
-          <div className="w-full max-w-md rounded-[2rem] border border-border bg-card p-6 shadow-lg shadow-primary/5">
-            <div className="rounded-[1.5rem] bg-primary/5 p-5">
-              <div className="mb-4 flex items-center justify-between">
-                <span className="text-sm font-semibold text-primary">Support That Feels Like Home</span>
-                <span className="rounded-full bg-secondary/15 px-2 py-1 text-xs font-medium text-secondary-foreground/90">
-                  Local
-                </span>
-              </div>
-
-              <div className="space-y-4">
-                {[
-                  "Personal care and daily routines",
-                  "Companionship and social connection",
-                  "Household support with reliability",
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-3 rounded-xl bg-white p-3 shadow-sm">
-                    <div className="mt-0.5 flex h-7 w-7 items-center justify-center rounded-full bg-secondary/15 text-secondary">
-                      ✓
-                    </div>
-                    <p className="text-sm text-foreground">{item}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+        <div className="relative mx-auto aspect-[4/3] w-full max-w-xl overflow-hidden rounded-[2rem] shadow-xl shadow-primary/10">
+          <Image
+            src="/image/hero%20image.jpg"
+            alt="A caregiver offering attentive support to an older adult at home"
+            fill
+            priority
+            sizes="(max-width: 1024px) 100vw, 40vw"
+            className="object-cover"
+          />
         </div>
       </div>
     </section>

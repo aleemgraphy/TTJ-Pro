@@ -1,4 +1,5 @@
 import ContactSection from "@/components/contact-section";
+import CarePrograms from "@/components/care-programs";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import HowItWorks from "@/components/how-it-works";
@@ -15,6 +16,7 @@ export default function Home() {
       <main>
         <Hero />
         <Mission />
+        <CarePrograms />
         <ServicesGrid />
         <WhyChooseUs />
         <HowItWorks />
