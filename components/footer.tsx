@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 import { navigation, siteConfig } from "@/lib/site";
 
@@ -37,6 +37,14 @@ export default function Footer() {
             >
               <Phone className="h-4 w-4" aria-hidden="true" />
               {siteConfig.phone}
+            </a>
+            <a
+              href={siteConfig.emailHref}
+              aria-label="Email TTJ PRO at ttjproneatcare@gmail.com"
+              className="inline-flex items-center gap-2 text-primary hover:underline"
+            >
+              <Mail className="h-4 w-4" aria-hidden="true" />
+              {siteConfig.email}
             </a>
             <p className="inline-flex items-center gap-2">
               <MapPin className="h-4 w-4" aria-hidden="true" />

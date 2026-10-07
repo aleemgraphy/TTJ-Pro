@@ -20,6 +20,8 @@ export const siteConfig = {
   name: "TTJ PRO NEAT HOME CARE & SUPPORT SERVICES",
   phone: "425-247-5341",
   phoneHref: "tel:425-247-5341",
+  email: "ttjproneatcare@gmail.com",
+  emailHref: "mailto:ttjproneatcare@gmail.com",
   serviceArea: "Bellevue, WA & Surrounding Puget Sound Areas",
   qrCodeUrl: process.env.NEXT_PUBLIC_CONTACT_URL ?? "/contact",
 };

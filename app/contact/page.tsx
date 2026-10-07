@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 import ContactForm from "@/components/contact-form";
 import { siteConfig } from "@/lib/site";
@@ -28,6 +28,18 @@ export default function ContactPage() {
               {siteConfig.phone}
             </a>
             <p className="mt-3 text-base text-muted-foreground">Free Consultation</p>
+          </div>
+
+          <div className="rounded-[2rem] border border-border bg-card p-6 shadow-sm">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Email</p>
+            <a
+              href={siteConfig.emailHref}
+              aria-label="Email TTJ PRO at ttjproneatcare@gmail.com"
+              className="mt-3 inline-flex items-center gap-3 text-lg font-semibold text-foreground hover:text-primary"
+            >
+              <Mail className="h-5 w-5" aria-hidden="true" />
+              {siteConfig.email}
+            </a>
           </div>
 
           <div className="rounded-[2rem] border border-border bg-card p-6 shadow-sm">

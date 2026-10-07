@@ -20,7 +20,7 @@ export default function Navbar() {
           <div className="leading-tight">
             <div className="text-base font-semibold text-foreground">TTJ PRO</div>
             <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-              Home Care
+              Home Care & Support Services
             </div>
           </div>
         </Link>
