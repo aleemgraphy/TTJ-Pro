@@ -42,7 +42,7 @@ export default function Hero() {
 
         <div className="relative mx-auto aspect-[4/3] w-full max-w-xl overflow-hidden rounded-[2rem] shadow-xl shadow-primary/10">
           <Image
-            src="/image/hero%20image.jpg"
+            src="/image/newHero.jpg"
             alt="A caregiver offering attentive support to an older adult at home"
             fill
             priority
